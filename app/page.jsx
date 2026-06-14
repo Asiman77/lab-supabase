@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-// import { supabase } from '../lib/supabaseClient'
+import { supabase } from '../lib/supabaseClient'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
       setLoading(false)
     }
 
-    //fetchStudents()
+    fetchStudents()
   }, [])
 
   return (
